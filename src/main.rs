@@ -12,8 +12,6 @@ fn main() {
     let mut num_loop = 0;
  
     loop {
-        // Increment attempt counter
-        num_loop += 1;
 
         // Asking user for guess
         let mut user_guess = String::new();
@@ -32,6 +30,8 @@ fn main() {
             },
         };
 
+         // Increment attempt counter
+        num_loop += 1;
         // Determine if user guess is right
         match user69.cmp(&secret_number) {
             Ordering::Less => println!("your guess is too low"),
